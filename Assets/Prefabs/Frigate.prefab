@@ -5560,7 +5560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887757213}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.48}
+  m_LocalPosition: {x: 0, y: 0, z: -375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20532,6 +20532,7 @@ MonoBehaviour:
   shield: {fileID: 283110504457763849}
   sharedMaterial: {fileID: 2100000, guid: a7bc26960a15e0f48bdadb98d68a05f6, type: 2}
   model: {fileID: 8571928562285734987}
+  useOrbit: 1
   isAssimilated: 0
   isInDestroyAnimation: 0
   isTractored: 0

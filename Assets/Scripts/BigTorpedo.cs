@@ -22,12 +22,14 @@ public class BigTorpedo : MonoBehaviour
     public ParticleSystem torpedoParticle;
     public ParticleSystem explosionParticle;
     public AudioSource explosionAudio;
+    private TrailRenderer trail;
 
 
     // Start is called before the first frame update
     void Start()
     {
         Invoke("SetGuidanceActive", 1f);
+        trail = GetComponentInChildren<TrailRenderer>();
     }
 
     // Update is called once per frame
@@ -78,6 +80,7 @@ public class BigTorpedo : MonoBehaviour
         explosionParticle.Play();
         explosionAudio.Play();
         torpedoParticle.Stop();
+        trail.enabled = false;
         yield return new WaitForSeconds(4);
         Destroy(gameObject);
     }    
